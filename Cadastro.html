@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Contato</title>
+
+
+    <style>
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+      </style>
+
+
+    <style type="text/css">
+        #cabecalho{
+            background-color: black;
+            width: auto;
+            color: white;
+            height: 120px;
+            margin: 20px auto;
+            padding-left:20px;
+            padding-top:10px;
+        }
+        .centralizado {
+            background-color: rgb(132, 241, 165);
+            border: 2px solid #999;
+            width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+       
+    </style>     
+</head>
+
+
+
+<body>
+
+    <div id="cabecalho">
+        <h1>GamesInfo</h1>
+    </div> 
+
+    <table border="1">
+        <tr>
+            <a href="Inicio.html"><button type="button" class="btn btn-outline-secondary">Inicio</button></a>
+            <a href="Playstation.html"><button type="button" class="btn btn-outline-primary">Playstation</button></a>
+            <a href="Xbox.html"><button type="button" class="btn btn-outline-success">Xbox</button></a>
+            <a href="Nintendoswitch.html"><button type="button" class="btn btn-outline-danger">Nintendo Switch</button></a>
+            <a href="Mobile.html"><button type="button" class="btn btn-outline-warning">Mobile</button></a>
+            <a href="PC.html"><button type="button" class="btn btn-outline-info">PC</button></a>
+            <a href="Contato.html"><button type="button" class="btn btn-outline-dark">Contato</button></a>
+            <a href="Cadastro.html"><button type="button" class="btn btn-outline-dark">Cadastro</button></a>
+        </tr>
+
+    </table>
+<p>
+<p>
+    <div id="Formulariopcontato">
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" />
+            </div>
+
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+            </div>
+
+            <div>
+                <label for="mail">Cep</label>
+                <input type="cep" id="mail" />
+            </div>
+
+            <div>
+                <label for="mail">Endereço</label>
+                <input type="endereco" id="mail" />
+            </div>
+
+            <div class="button">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+        
+    </div> 
+
+</body>
+</html>
